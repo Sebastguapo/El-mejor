@@ -4,321 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Registro</title>
-  <style>
-    /* [Los estilos son exactamente iguales que los tuyos, así que puedes mantenerlos sin cambios] */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f1f5f9;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: #7f1d1d;
-      color: white;
-      padding: 1.5rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    .card {
-      width: 100%;
-      max-width: 28rem;
-      margin: 0 auto;
-      border-radius: 0.5rem;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-header {
-      background-color: #7f1d1d;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-
-    .card-content {
-      padding: 1.5rem;
-      background-color: white;
-    }
-
-    .form-group {
-      margin-bottom: 1rem;
-    }
-
-    label {
-      display: block;
-      font-size: 0.875rem;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    select {
-      width: 100%;
-      padding: 0.5rem 0.75rem;
-      border: 1px solid #d1d5db;
-      border-radius: 0.375rem;
-      font-size: 1rem;
-      box-sizing: border-box;
-    }
-
-    input:focus,
-    select:focus {
-      outline: none;
-      border-color: #7f1d1d;
-      box-shadow: 0 0 0 3px rgba(127, 29, 29, 0.1);
-    }
-
-    .error {
-      color: #dc2626;
-      font-size: 0.875rem;
-      margin-top: 0.25rem;
-    }
-
-    .hint {
-      color: #6b7280;
-      font-size: 0.75rem;
-      margin-top: 0.25rem;
-    }
-
-    .radio-group {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .radio-option {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    button {
-      width: 100%;
-      background-color: #7f1d1d;
-      color: white;
-      border: none;
-      border-radius: 0.375rem;
-      padding: 0.625rem 1rem;
-      font-size: 1rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    button:hover {
-      background-color: #991b1b;
-    }
-
-    .tooltip {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-    }
-
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      width: 100%;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px;
-      position: absolute;
-      z-index: 1;
-      bottom: 125%;
-      left: 0;
-      margin-bottom: 5px;
-      opacity: 0;
-      transition: opacity 0.3s;
-      font-size: 0.875rem;
-    }
-
-    .tooltip .tooltiptext::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 15px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #333 transparent transparent transparent;
-    }
-
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
-      opacity: 0.9;
-    }
-  </style>
+  <title>Prototipo Netflix</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1>Sistema de Gestión – Interfaz Segura</h1>
+    <h1>Mi Prototipo Netflix SOY SEBASTIÁN Y ESTO FUE FACIL</h1>
+    <form class="login-form">
+      <input type="email" placeholder="Introduce tu Gmail" required>
+      <button type="submit">Entrar</button>
+    </form>
   </header>
 
-  <main class="container">
-    <div class="card">
-      <div class="card-header">
-        <h2>Registro de Usuario</h2>
+  <main>
+    <section class="carousel">
+      <h2>Recomendaciones</h2>
+      <div class="carousel-container">
+        <!-- Carrusel numerado de 1 al 15 -->
+        <div class="carousel-track">
+          <!-- Solo cambia src por tus imágenes reales -->
+          <!-- Aquí se insertan imágenes del 1 al 15 -->
+          <!-- Puedes reemplazar estas cajas por <img src="ruta/imagen.jpg"> -->
+          <!-- Ejemplo <img src="img/1.jpg" alt="Imagen 1"> -->
+          <div class="carousel-item">1</div>
+          <div class="carousel-item">2</div>
+          <div class="carousel-item">3</div>
+          <div class="carousel-item">4</div>
+          <div class="carousel-item">5</div>
+          <div class="carousel-item">6</div>
+          <div class="carousel-item">7</div>
+          <div class="carousel-item">8</div>
+          <div class="carousel-item">9</div>
+          <div class="carousel-item">10</div>
+          <div class="carousel-item">11</div>
+          <div class="carousel-item">12</div>
+          <div class="carousel-item">13</div>
+          <div class="carousel-item">14</div>
+          <div class="carousel-item">15</div>
+        </div>
       </div>
-      <div class="card-content">
-        <form id="registroForm">
-          <div class="form-group">
-            <label for="nombre">Nombre completo</label>
-            <div class="tooltip">
-              <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" />
-              <span class="tooltiptext">Ingrese su nombre y sus apellidos</span>
-            </div>
-            <div class="error" id="nombre-error"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="correo">Correo electrónico</label>
-            <div class="tooltip">
-              <input id="correo" name="correo" type="email" placeholder="ejemplo@correo.com" />
-              <span class="tooltiptext">Ingrese un correo electrónico válido</span>
-            </div>
-            <div class="error" id="correo-error"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="pais">País de origen</label>
-            <div class="tooltip">
-              <select id="pais" name="pais">
-                <option value="">Seleccione su país</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Estados Unidos">Estados Unidos</option>
-                <option value="Venezuela">Venezuela</option>
-              </select>
-              <span class="tooltiptext">Seleccione su país de origen</span>
-            </div>
-            <div class="error" id="pais-error"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="intereses">Intereses</label>
-            <div class="tooltip">
-              <input id="intereses" name="intereses" type="text" placeholder="Ejemplo: Programación, lectura..." />
-              <span class="tooltiptext">Cuéntenos sobre sus intereses</span>
-            </div>
-            <div class="error" id="intereses-error"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="contrasena">Contraseña</label>
-            <div class="tooltip">
-              <input id="contrasena" name="contrasena" type="password" placeholder="Ingrese su contraseña" />
-              <span class="tooltiptext">Mínimo 8 caracteres, máximo 12, incluyendo letra, número y símbolo.</span>
-            </div>
-            <div class="error" id="contrasena-error"></div>
-            <div class="hint">
-              Mínimo 8 caracteres, máximo 12. Debe incluir al menos una letra, un número y un símbolo.
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>Género (opcional)</label>
-            <div class="tooltip">
-              <div class="radio-group">
-                <div class="radio-option">
-                  <input type="radio" id="hombre" name="genero" value="hombre" />
-                  <label for="hombre">Hombre</label>
-                </div>
-                <div class="radio-option">
-                  <input type="radio" id="mujer" name="genero" value="mujer" />
-                  <label for="mujer">Mujer</label>
-                </div>
-              </div>
-              <span class="tooltiptext">Seleccione su género</span>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <button type="submit">Registrar</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    </section>
   </main>
-
-  <script>
-    document.getElementById('registroForm').addEventListener('submit', function (event) {
-      event.preventDefault();
-      document.querySelectorAll('.error').forEach(el => el.textContent = '');
-
-      const nombre = document.getElementById('nombre').value.trim();
-      const correo = document.getElementById('correo').value.trim();
-      const pais = document.getElementById('pais').value.trim();
-      const intereses = document.getElementById('intereses').value.trim();
-      const contrasena = document.getElementById('contrasena').value.trim();
-
-      let isValid = true;
-
-      if (!nombre) {
-        document.getElementById('nombre-error').textContent = 'El nombre es requerido';
-        isValid = false;
-      }
-
-      if (!correo) {
-        document.getElementById('correo-error').textContent = 'El correo es requerido';
-        isValid = false;
-      } else if (!/^\S+@\S+\.\S+$/.test(correo)) {
-        document.getElementById('correo-error').textContent = 'El correo no es válido';
-        isValid = false;
-      }
-
-      if (!pais) {
-        document.getElementById('pais-error').textContent = 'El país es requerido';
-        isValid = false;
-      }
-
-      if (!intereses) {
-        document.getElementById('intereses-error').textContent = 'Los intereses son requeridos';
-        isValid = false;
-      }
-
-      if (!contrasena) {
-        document.getElementById('contrasena-error').textContent = 'La contraseña es requerida';
-        isValid = false;
-      } else if (contrasena.length < 8) {
-        document.getElementById('contrasena-error').textContent = 'Debe tener al menos 8 caracteres';
-        isValid = false;
-      } else if (contrasena.length > 12) {
-        document.getElementById('contrasena-error').textContent = 'Debe tener máximo 12 caracteres';
-        isValid = false;
-      } else if (!/[A-Za-z]/.test(contrasena)) {
-        document.getElementById('contrasena-error').textContent = 'Debe incluir al menos una letra';
-        isValid = false;
-      } else if (!/[0-9]/.test(contrasena)) {
-        document.getElementById('contrasena-error').textContent = 'Debe incluir al menos un número';
-        isValid = false;
-      } else if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(contrasena)) {
-        document.getElementById('contrasena-error').textContent = 'Debe incluir al menos un símbolo';
-        isValid = false;
-      }
-
-      if (isValid) {
-        alert('Usuario registrado correctamente');
-        this.reset();
-      }
-    });
-  </script>
 </body>
 
 </html>

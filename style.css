@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+/* Header con formulario */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #b00710;
+}
+
+/* Carrusel */
+.carousel {
+    padding: 30px 20px;
+}
+
+.carousel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.carousel-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-item {
+    width: 200px;
+    height: 120px;
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    background-color: #444;
+}
